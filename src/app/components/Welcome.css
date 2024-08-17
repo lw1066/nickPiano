@@ -1,0 +1,59 @@
+/* Welcome.css */
+p {
+  color: white;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.welcome-section1 {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.welcome-section-testimonials {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.welcome-image-hammond {
+  max-width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+.welcome-image-elton {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
