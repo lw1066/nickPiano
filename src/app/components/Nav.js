@@ -8,7 +8,7 @@ function Navbar() {
       <div className="navbar-container">
         {/* <img src="/piano-tuning.jpg" alt="Logo" className="navbar-logo" />{" "} */}
         <h1 style={{ fontSize: "50px", fontFamily: "serif" }}>
-          Harris' Helpful Hands
+          Harris&apos; Helpful Hands
         </h1>
         <ul className="navbar-menu">
           <li>
