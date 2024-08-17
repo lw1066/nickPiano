@@ -16,7 +16,7 @@ function Welcome() {
               Hello - I&apos;m Nick, a musician and piano tuner based in the
               South East
             </h2>
-            <p>
+            <p style={{ width: "70%", margin: "0 auto" }}>
               I&apos;ve been playing the piano for over 30 years. I am a lover
               of all types of music but have a particular passion for funk on
               the Hammond organ. I offer a full range of tuning and restoration
@@ -33,7 +33,7 @@ function Welcome() {
           alt="Upright piano diagram"
           className="welcome-image"
         />
-        <p>
+        <p style={{ width: "70%", margin: "0 auto" }}>
           If you are lucky enough to have a piano, then you know it needs
           attention every now and then. I offer good value, professional tuning
           and repair services anywhere in the Southeast of England. If you need
@@ -46,7 +46,7 @@ function Welcome() {
         <h2>Testimonials</h2>
         <div className="testimonial-content">
           <img src="/elton.jpg" alt="Elton" className="welcome-image-elton" />
-          <p>
+          <p style={{ width: "60%", margin: "0 auto" }}>
             &quot;Nick has looked after several of my grandest pianos in recent
             months. He has always provided prompt, professional, and well-priced
             services.&quot;
