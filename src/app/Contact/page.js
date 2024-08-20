@@ -80,14 +80,15 @@ const Contact = () => {
       <div className="contact-form">
         <h2>Get in contact!</h2>
         <p style={{ width: "70%", margin: "20px auto" }}>
-          If you'd like more information please get in contact using the form
-          below - I'll get right back to you. Alternatively you can email me on
-          EMAIL, phone me on PHONE or contact me on WhatsApp WHATSAPP.
+          If you&apos;d like more information please get in contact using the
+          form below - I&apos;ll get right back to you. Alternatively you can
+          email me on EMAIL, phone me on PHONE or contact me on WhatsApp
+          WHATSAPP.
         </p>
         <p style={{ width: "70%", margin: "20px auto" }}>
-          If you'd like to book a service please include your name, address of
-          piano and contact number. Please also include a brief description of
-          what you think you need and a couple of preferred times. I will
+          If you&apos;d like to book a service please include your name, address
+          of piano and contact number. Please also include a brief description
+          of what you think you need and a couple of preferred times. I will
           contact you with a suggested appointment.
         </p>
 
