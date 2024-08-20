@@ -1,24 +1,56 @@
+"use client";
+
 import React from "react";
 import "./Navbar.css"; // We'll create this file for styles
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import useRouter
 
 function Navbar() {
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <nav className="navbar">
+      <div className="logo-text">
+        <img src="/logo.svg" alt="Logo" className="navbar-logo" />
+        <div className="logoText">
+          <h1
+            style={{
+              fontFamily: "Red Hat Display, sans-serif",
+              fontWeight: "700",
+            }}
+          >
+            Leith Hill Pianos
+          </h1>
+          <h2
+            style={{
+              fontFamily: "Red Hat Display, sans-serif",
+              fontWeight: "400",
+            }}
+          >
+            Tuning and Repairs
+          </h2>
+        </div>
+      </div>
       <div className="navbar-container">
-        {/* <img src="/piano-tuning.jpg" alt="Logo" className="navbar-logo" />{" "} */}
-        <h1 style={{ fontSize: "50px", fontFamily: "serif" }}>
-          Harris&apos; Helpful Hands
-        </h1>
         <ul className="navbar-menu">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">
+              <span className={pathname === "/" ? "active" : ""}>Home</span>
+            </Link>
           </li>
           <li>
-            <Link href="/about">Services</Link>
+            <Link href="/Services">
+              <span className={pathname === "/Services" ? "active" : ""}>
+                Services
+              </span>
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/Contact">
+              <span className={pathname === "/Contact" ? "active" : ""}>
+                Contact
+              </span>
+            </Link>
           </li>
         </ul>
       </div>

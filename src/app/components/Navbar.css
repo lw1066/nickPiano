@@ -1,7 +1,27 @@
-/* Navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+.logo-text {
+  display: flex;
+  width: 100%;
+}
+
+.logoText h1 {
+  font-size: 45px;
+}
+
+.logoText h2 {
+  margin: 0;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 .navbar {
-  background-color: #333;
+  background-color: #a6a8ab;
   position: sticky;
   top: 0;
   width: 100%;
@@ -14,20 +34,17 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  padding: 50px;
-
-  background-image: url("/piano_tuning.jpeg");
-  background-size: cover; /* Ensures the image covers the entire navbar */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /* width: 200px; */
+  padding: 0 30px 0 0;
 }
 
 .navbar-logo {
-  height: 40px;
-  width: 200px;
+  height: auto;
+  width: 20%;
+  max-width: 200px;
+  padding: 2% 0 2% 5%;
 }
 
 .navbar-menu {
@@ -35,19 +52,100 @@
   display: flex;
   margin: 0;
   padding: 0;
+  width: 240px;
 }
 
 .navbar-menu li {
   margin-left: 20px;
+  padding: 0 0 10px 0;
 }
 
 .navbar-menu a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: font-weight 1s;
 }
 
 .navbar-menu a:hover {
-  color: #ddd;
+  color: #7a7a7a;
+}
+
+.active {
+  color: #7a7a7a;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    width: 60px;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+
+  .navbar-logo {
+    width: 25%;
+  }
+}
+
+@media (max-width: 624px) {
+  .logoText h1 {
+    font-size: 35px;
+  }
+
+  .logoText h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 524px) {
+  .logoText h1 {
+    font-size: 28px;
+  }
+
+  .logoText h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 468px) {
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-logo {
+    width: 20%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+  }
+
+  /* .logoText h1 {
+    font-size: 28px;
+  }
+
+  .logoText h2 {
+    font-size: 20px;
+  } */
+}
+
+@media (max-width: 386px) {
+  /* .logoText h1 {
+    font-size: 38px;
+  }
+
+  .logoText h2 {
+    font-size: 17px;
+  } */
 }
