@@ -8,30 +8,47 @@
   margin: 40px;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+.contact-form p {
+  width: 70%;
+  margin: 20px auto;
+  font-size: 16px;
 }
 
-.modal-wrapper {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.input-group .form-control {
+  width: 100%; /* Make the inputs full width within the group */
+  max-width: 500px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the input fields */
+  font-size: 14px;
+  border-radius: 4px !important;
 }
+
+.form-label {
+  font-size: 14px;
+}
+
 .modal-box {
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  transform: translate(35%, -200%);
+  color: rgb(8, 7, 7);
+}
+
+.modal-header {
   background-color: black;
-  border-radius: 12px;
-  padding: 50px;
-  max-width: 60%;
   color: white;
+}
+
+.modal-footer {
+  background-color: black;
+  color: white;
+}
+
+.modal-body {
+  background-color: #212121;
+  color: white;
+}
+
+@media (max-width: 468px) {
+  .contact-form p {
+    width: 90%;
+    font-size: 14px;
+  }
 }

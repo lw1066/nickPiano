@@ -79,20 +79,20 @@ const Contact = () => {
     <>
       <div className="contact-form">
         <h2>Get in contact!</h2>
-        <p style={{ width: "70%", margin: "20px auto" }}>
+        <p>
           If you&apos;d like more information please get in contact using the
           form below - I&apos;ll get right back to you. Alternatively you can
           email me on EMAIL, phone me on PHONE or contact me on WhatsApp
           WHATSAPP.
         </p>
-        <p style={{ width: "70%", margin: "20px auto" }}>
+        <p>
           If you&apos;d like to book a service please include your name, address
           of piano and contact number. Please also include a brief description
           of what you think you need and a couple of preferred times. I will
           contact you with a suggested appointment.
         </p>
 
-        <Form onSubmit={handleFormSubmit} style={{ width: "60%" }}>
+        <Form onSubmit={handleFormSubmit}>
           <Form.Group controlId="formName" className="input-group">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -104,7 +104,7 @@ const Contact = () => {
             />
           </Form.Group>
 
-          <Form.Group controlId="formEmail" className="input-group">
+          <Form.Group controlId="formEmail" className="input-group mt-3">
             <Form.Label>Email address</Form.Label>
             <Form.Control
               type="email"
@@ -115,7 +115,7 @@ const Contact = () => {
             />
           </Form.Group>
 
-          <Form.Group controlId="formMessage" className="input-group">
+          <Form.Group controlId="formMessage" className="input-group mt-3">
             <Form.Label>Message</Form.Label>
             <Form.Control
               as="textarea"
@@ -127,7 +127,12 @@ const Contact = () => {
             />
           </Form.Group>
 
-          <Button variant="outline-success" type="submit">
+          <Button
+            variant="outline-success"
+            className="mt-3"
+            size="sm"
+            type="submit"
+          >
             Send
           </Button>
         </Form>
@@ -143,7 +148,11 @@ const Contact = () => {
             </Modal.Header>
             <Modal.Body>{modalMessage}</Modal.Body>
             <Modal.Footer>
-              <Button variant="primary" onClick={() => setShowModal(false)}>
+              <Button
+                variant="outline-danger"
+                size="sm"
+                onClick={() => setShowModal(false)}
+              >
                 Close
               </Button>
             </Modal.Footer>

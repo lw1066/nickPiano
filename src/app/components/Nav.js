@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation"; // Import useRouter
 
 function Navbar() {
   const pathname = usePathname();
-  console.log(pathname);
+
   return (
     <nav className="navbar">
       <div className="logo-text">
-        <img src="/logo.svg" alt="Logo" className="navbar-logo" />
+        <img src="/logo.svg" alt="Logo" className="logo" />
         <div className="logoText">
           <h1
             style={{
@@ -31,29 +31,29 @@ function Navbar() {
           </h2>
         </div>
       </div>
-      <div className="navbar-container">
-        <ul className="navbar-menu">
-          <li>
-            <Link href="/">
-              <span className={pathname === "/" ? "active" : ""}>Home</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/Services">
-              <span className={pathname === "/Services" ? "active" : ""}>
-                Services
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/Contact">
-              <span className={pathname === "/Contact" ? "active" : ""}>
-                Contact
-              </span>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      {/* <div className="navbar-container"> */}
+      <ul className="menu">
+        <li>
+          <Link href="/">
+            <span className={pathname === "/" ? "active" : ""}>Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/Services">
+            <span className={pathname === "/Services" ? "active" : ""}>
+              Services
+            </span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/Contact">
+            <span className={pathname === "/Contact" ? "active" : ""}>
+              Contact
+            </span>
+          </Link>
+        </li>
+      </ul>
+      {/* </div> */}
     </nav>
   );
 }
