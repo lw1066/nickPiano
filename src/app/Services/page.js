@@ -1,3 +1,5 @@
+import "./services.css";
+
 const Page = () => {
   return (
     <div
@@ -12,7 +14,7 @@ const Page = () => {
       <img
         src="/pianoDiagram.jpg"
         alt="Nick tuning an upright piano"
-        className="welcome-image-nick"
+        className="piano-diagram"
       />
       <p>A page of services...</p>
     </div>
