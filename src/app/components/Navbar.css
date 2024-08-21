@@ -44,6 +44,7 @@
   width: 20%;
   max-width: 200px;
   padding: 2% 0 2% 5%;
+  margin-right: 20px;
 }
 
 .navbar-menu {
@@ -111,6 +112,10 @@
 
   .logoText h2 {
     font-size: 20px;
+  }
+
+  .navbar-logo {
+    margin-right: 10px;
   }
 }
 
