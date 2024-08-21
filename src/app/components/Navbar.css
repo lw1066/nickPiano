@@ -49,7 +49,7 @@
 .navbar-menu {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   width: 240px;
 }
@@ -81,6 +81,16 @@
   font-size: 24px;
 }
 
+@media (min-width: 1028px) {
+  .navbar-logo {
+    width: 17%;
+  }
+
+  .navbar-menu {
+    margin-right: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-container {
     width: 60px;
@@ -90,7 +100,7 @@
   }
 
   .navbar-logo {
-    width: 25%;
+    width: 120px;
   }
 }
 
@@ -119,7 +129,7 @@
     width: 100%;
   }
   .navbar-logo {
-    width: 20%;
+    width: 80px;
   }
 
   .navbar {
@@ -129,14 +139,6 @@
   .navbar-menu {
     flex-direction: row;
   }
-
-  /* .logoText h1 {
-    font-size: 28px;
-  }
-
-  .logoText h2 {
-    font-size: 20px;
-  } */
 }
 
 @media (max-width: 386px) {
