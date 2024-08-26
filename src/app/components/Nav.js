@@ -16,18 +16,22 @@ function Navbar() {
           <h1
             style={{
               fontFamily: "Red Hat Display, sans-serif",
-              fontWeight: "700",
+              fontWeight: "500",
+              color: "black",
             }}
           >
-            Leith Hill Pianos
+            Leith Hill Piano Tuning
           </h1>
           <h2
             style={{
-              fontFamily: "Red Hat Display, sans-serif",
+              fontFamily: "Dancing Script, sans-serif",
               fontWeight: "400",
+              color: "black",
+              // fontSize: "30px",
+              textAlign: "center",
             }}
           >
-            Tuning and Repairs
+            Keeping Surrey In Tune{" "}
           </h2>
         </div>
       </div>
@@ -35,19 +39,31 @@ function Navbar() {
       <ul className="menu">
         <li>
           <Link href="/">
-            <span className={pathname === "/" ? "active" : ""}>Home</span>
+            <span
+              className={` ${"navLinks"} ${pathname === "/" ? "active" : ""}`}
+            >
+              Home
+            </span>
           </Link>
         </li>
         <li>
           <Link href="/Services">
-            <span className={pathname === "/Services" ? "active" : ""}>
+            <span
+              className={` ${"navLinks"} ${
+                pathname === "/Services" ? "active" : ""
+              }`}
+            >
               Services
             </span>
           </Link>
         </li>
         <li>
           <Link href="/Contact">
-            <span className={pathname === "/Contact" ? "active" : ""}>
+            <span
+              className={` ${"navLinks"} ${
+                pathname === "/Contact" ? "active" : ""
+              }`}
+            >
               Contact
             </span>
           </Link>

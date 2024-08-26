@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pirata+One&family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pirata+One&family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap");
 
 .logo-text {
   display: flex;
-  width: 550px;
+  width: 675px;
 }
 
 .logoText h1 {
@@ -32,6 +37,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navLinks {
+  color: black;
 }
 
 .logo {
@@ -67,7 +76,7 @@
   transition: font-weight 0.6s ease;
 }
 
-.menu a:hover {
+.navLinks:hover {
   color: #7a7a7a;
 }
 
@@ -82,11 +91,11 @@
   }
 
   .menu {
-    margin-right: 50px;
+    /* margin-right: 50px; */
   }
 }
 
-@media (max-width: 898px) {
+@media (max-width: 1024px) {
   .menu {
     flex-direction: column;
     width: 60px;
@@ -94,23 +103,17 @@
   }
 }
 
-@media (max-width: 768px) {
-  .logo {
-    width: 120px;
-  }
-}
-
-@media (max-width: 698px) {
+@media (max-width: 836px) {
   .logo-text {
-    width: 400px;
+    width: 475px;
   }
 
   .logoText h1 {
-    font-size: 35px;
+    font-size: 34px;
   }
 
   .logoText h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .logo {
@@ -119,46 +122,33 @@
   }
 }
 
-/* @media (max-width: 624px) {
-  .logoText h1 {
-    font-size: 35px;
-  }
-
-  .logoText h2 {
-    font-size: 20px;
-  }
-
-  .logo {
-    margin-right: 10px;
-  }
-} */
-
-@media (max-width: 548px) {
+@media (max-width: 633px) {
   .navbar {
     flex-direction: column;
     padding: 0;
+    margin: 0;
+    align-items: flex-start;
   }
 
   .menu {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    width: 90%;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 492px) {
   .logo {
-    width: 80px;
+    width: 70px;
   }
 
   .logo-text {
-    width: 300px;
+    width: 320px;
   }
 
   .logoText h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .logoText h2 {
