@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Leith Hill Pianos",
+  title: "Leith Hill Piano Tuning",
   description: "Piano tuning and servicing",
   icons: {
     icon: "/favicon.ico",

@@ -4,6 +4,8 @@ import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./contact.css";
 
 const Contact = () => {
@@ -79,19 +81,32 @@ const Contact = () => {
     <>
       <div className="contact-form">
         <h2>Get in contact!</h2>
+        <div className="contact-info">
+          <div className="contact-item">
+            <FontAwesomeIcon icon={faPhone} />
+            <span>+44&nbsp;1234&nbsp;567890</span>
+          </div>
+          <div className="contact-item">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span>nick@leithhillpianotuning.com</span>
+          </div>
+        </div>
         <p>
-          If you&apos;d like more information please get in contact using the
-          form below - I&apos;ll get right back to you. Alternatively you can
-          email me on EMAIL, phone me on PHONE or contact me on WhatsApp
-          WHATSAPP.
+          The easiest way to get in contact is using the form below - I&apos;ll
+          get right back to you!
         </p>
-        <p>
-          If you&apos;d like to book a service please include your name, address
-          of piano and contact number. Please also include a brief description
-          of what you think you need and a couple of preferred times. I will
-          contact you with a suggested appointment.
-        </p>
-
+        <p>If you&apos;d like to book a service please include</p>
+        <ul>
+          <li>The address the piano is kept</li>
+          <li>A contact number</li>
+          <li>The piano's make, age, last time it was tuned</li>
+          <li>
+            A brief description of what you think you need/ the piano's
+            condition
+          </li>
+          <li>A couple of preferred times</li>
+        </ul>{" "}
+        <p> I will contact you with a suggested appointment.</p>
         <Form onSubmit={handleFormSubmit}>
           <Form.Group controlId="formName" className="input-group">
             <Form.Label>Name</Form.Label>
@@ -136,7 +151,6 @@ const Contact = () => {
             Send
           </Button>
         </Form>
-
         <div className="modal-wrapper">
           <Modal
             show={showModal}

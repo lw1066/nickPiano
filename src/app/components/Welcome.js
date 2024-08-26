@@ -13,6 +13,7 @@ function Welcome() {
           interval={5000}
           controls={false}
           indicators={false}
+          pause={false}
           className="carousel-custom"
         >
           <Carousel.Item>
@@ -23,7 +24,7 @@ function Welcome() {
           </Carousel.Item>
         </Carousel>
         <div className="welcome-text">
-          <h2>Welcome to Leith Hill Pianos</h2>
+          <h2>Welcome to Leith Hill Piano Tuning</h2>
           <p>
             I&apos;m Nick, I&apos;ve been playing the piano for over 30 years. I
             am a lover of all types of music but have a particular passion for
