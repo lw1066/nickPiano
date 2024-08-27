@@ -3,6 +3,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./Welcome.css";
+import Link from "next/link";
 
 function Welcome() {
   return (
@@ -26,23 +27,33 @@ function Welcome() {
         <div className="welcome-text">
           <h2>Welcome to Leith Hill Piano Tuning</h2>
           <p>
-            I&apos;m Nick, I&apos;ve been playing the piano for over 30 years. I
-            am a lover of all types of music but have a particular passion for
-            funk on the Hammond organ. I offer a full range of tuning and
-            restoration services for all types of piano.
+            I&apos;m Nick, and I&apos;ve been tinkling the ivories since I was a
+            young lad. I've always had a real passion for this amazing
+            instrument. My favourite styles are jazz and funk, and you can often
+            find me grooving away with an 80's themed function band.
+          </p>
+          <p>
+            I&apos;m a qualified piano tuner, having studied at the Piano
+            Technology School. I blend modern technology with traditional
+            techniques to ensure precise and accurate tuning.{" "}
           </p>
         </div>
       </div>
 
       <div className="welcome-content section2">
         <div className="welcome-text">
-          <h2>Piano tuning and repairs</h2>
+          <h2>Piano tuning services throughout the Surrey area</h2>
           <p>
             If you are lucky enough to have a piano, then you know it needs
-            attention every now and then. I offer good value, professional
-            tuning and repair services anywhere in the Southeast of England. If
-            you need help maintaining your piano, please get in touch to see how
-            I could help.
+            regular attention. Best practice is to have it tuned every six
+            months, as changes in temperature can affect the air humidity,
+            causing your piano to go out of tune. To help protect your piano
+            from more extreme temperature changes, it's best to keep it away
+            from radiators, windows, ovens, and doorways.
+          </p>
+          <p>
+            Take a look at the <Link href="/Services">services</Link> page for
+            details of how I can help keep your piano in tip-top condition.
           </p>
         </div>
         <img

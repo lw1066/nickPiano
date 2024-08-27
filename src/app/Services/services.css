@@ -2,4 +2,24 @@
   border-radius: 12px;
   width: 400px;
   height: auto;
+  margin-top: 40px;
+}
+
+.servicesText {
+  width: 60%;
+  margin-block: 30px;
+}
+
+@media (max-width: 468px) {
+  .servicesText {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .piano-diagram {
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
 }

@@ -81,4 +81,8 @@
     width: 90%;
     font-size: 14px;
   }
+
+  .contact-form li {
+    font-size: 14px;
+  }
 }

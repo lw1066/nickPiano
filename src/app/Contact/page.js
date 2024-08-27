@@ -95,7 +95,7 @@ const Contact = () => {
           The easiest way to get in contact is using the form below - I&apos;ll
           get right back to you!
         </p>
-        <p>If you&apos;d like to book a service please include</p>
+        <p>If you&apos;d like to book a tuning please include</p>
         <ul>
           <li>The address the piano is kept</li>
           <li>A contact number</li>
