@@ -18,10 +18,13 @@ function Welcome() {
           className="carousel-custom"
         >
           <Carousel.Item>
-            <img src="/nickPiano1.jpeg" alt="Me playing piano" />
+            <img src="/nickPiano1.jpg" alt="Me playing piano" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="/nickPiano2.jpeg" alt="Nick tuning an upright piano" />
+            <img src="/nickPiano2.jpg" alt="Nick tuning an upright piano" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src="/nickPiano3.jpg" alt="Me tuning piano" />
           </Carousel.Item>
         </Carousel>
         <div className="welcome-text">
@@ -57,7 +60,7 @@ function Welcome() {
           </p>
         </div>
         <img
-          src="/nickPiano2.jpeg"
+          src="/nickPiano2.jpg"
           alt="Nick tuning an upright piano"
           className="welcome-image-nick"
         />
