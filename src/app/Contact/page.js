@@ -99,9 +99,9 @@ const Contact = () => {
         <ul>
           <li>The address the piano is kept</li>
           <li>A contact number</li>
-          <li>The piano's make, age, last time it was tuned</li>
+          <li>The piano&apos;s make, age, last time it was tuned</li>
           <li>
-            A brief description of what you think you need/ the piano's
+            A brief description of what you think you need/ the piano&apos;s
             condition
           </li>
           <li>A couple of preferred times</li>
