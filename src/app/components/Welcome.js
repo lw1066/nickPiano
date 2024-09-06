@@ -33,7 +33,7 @@ function Welcome() {
             I&apos;m Nick, and I&apos;ve been tinkling the ivories since I was a
             young lad. I&apos;ve always had a real passion for this amazing
             instrument. My favourite styles are jazz and funk, and you can often
-            find me grooving away with an 80&apos;s themed function band.
+            find me grooving with an 80&apos;s themed function band.
           </p>
           <p>
             I&apos;m a qualified piano tuner, having studied at the Piano
