@@ -26,8 +26,17 @@ const Page = () => {
           I charge £85 for a tuning and any running repairs. Please leave up to
           3 hours per appointment.
         </p>
-        <h2>Regulation</h2>I offer a regulation service for upright and grand
-        pianos. Please contact me for further details.
+        <h2>Cleaning and regulation</h2>
+        <p>
+          Cleaning and making necessary adjustments to the inner mechanism of
+          the piano is important as this compensates for any wear and changes in
+          wooden parts due to humidity.
+        </p>{" "}
+        <p>
+          I offer a regulation service for uprights and grands which will give
+          your instrument a new lease of life. Please contact for further
+          details.
+        </p>
       </div>
     </div>
   );

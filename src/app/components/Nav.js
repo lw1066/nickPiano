@@ -15,7 +15,7 @@ function Navbar() {
         <div className="logoText">
           <h1
             style={{
-              fontFamily: "Red Hat Display, sans-serif",
+              fontFamily: "Dancing Script, sans-serif",
               fontWeight: "500",
               color: "black",
             }}
@@ -27,7 +27,7 @@ function Navbar() {
               fontFamily: "Dancing Script, sans-serif",
               fontWeight: "400",
               color: "black",
-              // fontSize: "30px",
+
               textAlign: "center",
             }}
           >

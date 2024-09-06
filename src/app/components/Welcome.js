@@ -45,7 +45,7 @@ function Welcome() {
 
       <div className="welcome-content section2">
         <div className="welcome-text">
-          <h2>Piano tuning services throughout the Surrey area</h2>
+          <h2>Piano tuning services in the Surrey area</h2>
           <p>
             If you are lucky enough to have a piano, then you know it needs
             regular attention. Best practice is to have it tuned every six
