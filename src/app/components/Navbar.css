@@ -1,23 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pirata+One&family=Qwitcher+Grypen:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Pirata+One&family=Qwitcher+Grypen:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap");
 
 .logo-text {
   display: flex;
-  width: 675px;
+  width: 680px;
 }
 
 .logoText h1 {
-  font-size: 60px;
+  font-size: 61px;
   margin: 0;
-}
-
-.logoText h2 {
-  margin: 0;
-  font-size: 35px;
+  /* text-align: center; */
 }
 
 .logoText {
@@ -45,10 +36,10 @@
 
 .logo {
   height: auto;
-  width: 130px;
+  width: 140px;
   max-width: 200px;
   padding: 2% 0 2% 5%;
-  margin-right: 20px;
+  margin: 0;
 }
 
 .menu {
@@ -88,6 +79,8 @@
 @media (min-width: 1028px) {
   .logo {
     width: 140px;
+    /* padding: 0 */
+    margin: 0;
   }
 
   .menu {
@@ -105,15 +98,11 @@
 
 @media (max-width: 836px) {
   .logo-text {
-    width: 475px;
+    width: 550px;
   }
 
   .logoText h1 {
-    font-size: 40px;
-  }
-
-  .logoText h2 {
-    font-size: 24px;
+    font-size: 50px;
   }
 
   .logo {
@@ -122,14 +111,20 @@
   }
 }
 
-@media (max-width: 633px) {
-  .navbar {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: flex-start;
+@media (max-width: 700px) {
+  .logo {
+    width: 120px;
   }
 
+  .logo-text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 542px) {
+  .logo-text {
+    width: 100%;
+  }
   .menu {
     flex-direction: row;
     justify-content: flex-end;
@@ -138,20 +133,22 @@
   }
 }
 
-@media (max-width: 492px) {
+/* @media (max-width: 412px) {
   .logo {
-    width: 70px;
-  }
-
-  .logo-text {
-    width: 320px;
+    width: 110px;
   }
 
   .logoText h1 {
-    font-size: 28px;
+    font-size: 45px;
+  }
+} */
+
+@media (max-width: 412px) {
+  .logo {
+    width: 85px;
   }
 
-  .logoText h2 {
-    font-size: 15px;
+  .logoText h1 {
+    font-size: 35px;
   }
 }

@@ -151,12 +151,8 @@ const Contact = () => {
             Send
           </Button>
         </Form>
-        <div className="modal-wrapper">
-          <Modal
-            show={showModal}
-            onHide={() => setShowModal(false)}
-            className="modal-box"
-          >
+        <div>
+          <Modal show={showModal} className="modal-box">
             <Modal.Header>
               <Modal.Title>{modalTitle}</Modal.Title>
             </Modal.Header>

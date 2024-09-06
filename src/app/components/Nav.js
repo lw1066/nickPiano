@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import "./Navbar.css"; // We'll create this file for styles
+import "./Navbar.css";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Import useRouter
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const pathname = usePathname();
@@ -16,26 +16,15 @@ function Navbar() {
           <h1
             style={{
               fontFamily: "Dancing Script, sans-serif",
-              fontWeight: "500",
+              fontWeight: "600",
               color: "black",
             }}
           >
-            Leith Hill Piano Tuning
+            Leith&nbsp;Hill Piano&nbsp;Tuning
           </h1>
-          <h2
-            style={{
-              fontFamily: "Dancing Script, sans-serif",
-              fontWeight: "400",
-              color: "black",
-
-              textAlign: "center",
-            }}
-          >
-            Keeping Surrey In Tune{" "}
-          </h2>
         </div>
       </div>
-      {/* <div className="navbar-container"> */}
+
       <ul className="menu">
         <li>
           <Link href="/">
