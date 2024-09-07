@@ -24,41 +24,41 @@ function Navbar() {
           </h1>
         </div>
       </div>
-
-      <ul className="menu">
-        <li>
-          <Link href="/">
-            <span
-              className={` ${"navLinks"} ${pathname === "/" ? "active" : ""}`}
-            >
-              Home
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link href="/Services">
-            <span
-              className={` ${"navLinks"} ${
-                pathname === "/Services" ? "active" : ""
-              }`}
-            >
-              Services
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link href="/Contact">
-            <span
-              className={` ${"navLinks"} ${
-                pathname === "/Contact" ? "active" : ""
-              }`}
-            >
-              Contact
-            </span>
-          </Link>
-        </li>
-      </ul>
-      {/* </div> */}
+      <div className="menuContainer">
+        <ul className="menu">
+          <li>
+            <Link href="/">
+              <span
+                className={` ${"navLinks"} ${pathname === "/" ? "active" : ""}`}
+              >
+                Home
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Services">
+              <span
+                className={` ${"navLinks"} ${
+                  pathname === "/Services" ? "active" : ""
+                }`}
+              >
+                Services
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Contact">
+              <span
+                className={` ${"navLinks"} ${
+                  pathname === "/Contact" ? "active" : ""
+                }`}
+              >
+                Contact
+              </span>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
