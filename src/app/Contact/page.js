@@ -84,11 +84,11 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} />
-            <span>+44&nbsp;1234&nbsp;567890</span>
+            <span>+44&nbsp;7476&nbsp;729389</span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>nick@leithhillpianotuning.com</span>
+            <span>info@leithhillpianos.co.uk</span>
           </div>
         </div>
         <p>
