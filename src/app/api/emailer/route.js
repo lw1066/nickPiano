@@ -22,6 +22,7 @@ export async function POST(req) {
   mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
     to: "info@leithhillpianos.co.uk", // Change this to the recipient's email for registration
+    replyTo: email,
     subject: `contact: ${name}`,
     html: `
         <p>Name: ${name}</p>
